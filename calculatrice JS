@@ -1,0 +1,33 @@
+function calcu ()
+{
+ var nomb1 = prompt ("Choisir un premier nombre" ),
+     ope = prompt("Choisir l'opérateur (+, -, , /)" ),
+     nomb2 = prompt("Choisir un deuxième nombre" ),
+     t;
+ if (nomb1 == ""  nomb2 == ""  ope == "" )
+ {
+     return alert ("Erreur" );
+ }
+ n1 = parseInt (nomb1, 10);
+ n2 = parseInt (nomb2, 10);
+ switch (ope)
+ {
+     case '+':
+   t = nomb1 + nomb2;
+   break;
+     case '-':
+   t = nomb1 - nomb2;
+   break;
+     case '':
+   t = nomb1 * nomb2;
+   break;
+     case '/':
+   t = nomb1 / nomb2;
+   break;
+     default:
+   t = "Problème d'opérateur";
+   break;
+ }
+ alert (t);
+};
+calcu ();
